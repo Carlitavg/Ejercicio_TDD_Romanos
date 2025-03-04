@@ -7,5 +7,7 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 2 a 'II'", () => {
         expect(convertirARomanos(2)).toEqual("II");
     });
-    
+    it("Debería convertir 3 a 'III'", () => {
+        expect(convertirARomanos(3)).toEqual("III");
+    });
 });

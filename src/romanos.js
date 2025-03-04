@@ -1,10 +1,7 @@
 function convertirARomanos(num) {
-    if(num == 1){
-        return "I"
-    }
-    if(num == 2){
-        return "II"
-    }
+
+    return "I".repeat(num);
+    
 }
 
 export default convertirARomanos;
