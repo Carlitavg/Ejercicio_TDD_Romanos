@@ -13,4 +13,7 @@ describe("Conversión de números a romanos", () => {
     it("No debería convertir 0 a romanos", () => {
         expect(convertirARomanos(0)).toEqual("Número no válido");
     });
+    it("Debería convertir 4 a 'IV'", () => {
+        expect(convertirARomanos(4)).toEqual("IV");
+    });
 });
