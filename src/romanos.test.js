@@ -25,4 +25,10 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 7 a 'VII'", () => {
         expect(convertirARomanos(7)).toEqual("VII");
     });
+    it("Debería convertir 8 a 'VIII'", () => {
+        expect(convertirARomanos(8)).toEqual("VIII");
+    });
+    it("Debería convertir 9 a 'IX'", () => {
+        expect(convertirARomanos(9)).toEqual("IX");
+    });
 });

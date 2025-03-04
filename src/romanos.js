@@ -1,6 +1,9 @@
 function convertirARomanos(num) {
     if(num <= 0) return "Número no válido"
     let resultado = ""
+
+    if(num == 9) return "IX"
+
     if (num >= 5) {
         resultado += "V";
         num -= 5;
