@@ -10,4 +10,7 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 3 a 'III'", () => {
         expect(convertirARomanos(3)).toEqual("III");
     });
+    it("No debería convertir 0 a romanos", () => {
+        expect(convertirARomanos(0)).toEqual("Número no válido");
+    });
 });
