@@ -1,17 +1,21 @@
 function convertirARomanos(num) {
     if(num <= 0) return "Número no válido"
-    if(num < 4){
-        return "I".repeat(num);
+    let resultado = ""
+    if (num >= 5) {
+        resultado += "V";
+        num -= 5;
     }
-    if(num == 4 ){
-        return "IV";
+    if (num >= 4) {
+        resultado += "IV";
+        num -= 4;
     }
-    if(num == 5 ){
-        return "V";
+    
+    while (num >= 1) {
+        resultado += "I";
+        num -= 1;
     }
-    if(num == 6 ){
-        return "VI";
-    }
+
+    return resultado;
 
 }
 
