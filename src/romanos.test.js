@@ -16,4 +16,7 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 4 a 'IV'", () => {
         expect(convertirARomanos(4)).toEqual("IV");
     });
+    it("Debería convertir 5 a 'V'", () => {
+        expect(convertirARomanos(5)).toEqual("V");
+    });
 });
