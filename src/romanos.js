@@ -2,8 +2,15 @@ function convertirARomanos(num) {
     if(num <= 0) return "Número no válido"
     let resultado = ""
 
-     if(num == 10) return "X"
-    if(num == 9) return "IX"
+    while (num >= 10) {
+        resultado += "X";
+        num -= 10;
+    }
+
+    if (num >= 9) {
+        resultado += "IX";
+        num -= 9;
+    }
 
     if (num >= 5) {
         resultado += "V";

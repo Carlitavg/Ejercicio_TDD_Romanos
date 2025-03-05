@@ -34,4 +34,15 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 10 a 'X'", () => {
         expect(convertirARomanos(10)).toEqual("X");
     });
+    it("Debería convertir del 11 al 39 a romanos", () => {
+        expect(convertirARomanos(11)).toEqual("XI");
+        expect(convertirARomanos(13)).toEqual("XIII");
+        expect(convertirARomanos(15)).toEqual("XV");
+        expect(convertirARomanos(19)).toEqual("XIX");
+        expect(convertirARomanos(20)).toEqual("XX");
+        expect(convertirARomanos(21)).toEqual("XXI");
+        expect(convertirARomanos(30)).toEqual("XXX");
+        expect(convertirARomanos(31)).toEqual("XXXI");
+        expect(convertirARomanos(39)).toEqual("XXXIX");
+    });
 });
