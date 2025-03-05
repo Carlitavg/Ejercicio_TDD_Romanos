@@ -99,5 +99,7 @@ describe("Conversión de números a romanos", () => {
         expect(convertirARomanos(375)).toEqual("CCCLXXV");
         expect(convertirARomanos(399)).toEqual("CCCXCIX");
     });
-    
+    it("Debería convertir 400 a 'CD'", () => {
+        expect(convertirARomanos(400)).toEqual("CD");
+    });
 });

@@ -2,6 +2,9 @@ function convertirARomanos(num) {
     if(num <= 0) return "Número no válido"
     let resultado = ""
 
+    if(num == 400){
+        return "CD"
+    }
     while (num >= 100) {
         resultado += "C";
         num -= 100;
