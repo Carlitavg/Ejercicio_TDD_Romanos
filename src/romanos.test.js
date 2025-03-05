@@ -48,4 +48,13 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 40 a 'XL'", () => {
         expect(convertirARomanos(40)).toEqual("XL");
     });
+    it("Debería convertir del 40 al 49 a romanos", () => {
+        expect(convertirARomanos(40)).toEqual("XL");
+        expect(convertirARomanos(42)).toEqual("XLII");
+        expect(convertirARomanos(43)).toEqual("XLIII");
+        expect(convertirARomanos(44)).toEqual("XLIV");
+        expect(convertirARomanos(45)).toEqual("XLV");
+        expect(convertirARomanos(47)).toEqual("XLVII");
+        expect(convertirARomanos(49)).toEqual("XLIX");
+    });
 });
