@@ -111,4 +111,9 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 500 a 'D'", () => {
         expect(convertirARomanos(500)).toEqual("D");
     });
+    it("No debería convertir numeros mayores a 500 a # romanos", () => {
+        expect(convertirARomanos(501)).toEqual("Número no válido");
+        expect(convertirARomanos(541)).toEqual("Número no válido");
+        expect(convertirARomanos(600)).toEqual("Número no válido");
+    });
 });

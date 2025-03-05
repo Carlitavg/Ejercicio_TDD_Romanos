@@ -1,5 +1,5 @@
 function convertirARomanos(num) {
-    if(num <= 0) return "Número no válido"
+    if(num <= 0 || num > 500) return "Número no válido"
     let resultado = ""
 
     if(num == 500){
