@@ -82,4 +82,7 @@ describe("Conversión de números a romanos", () => {
         expect(convertirARomanos(98)).toEqual("XCVIII");
         expect(convertirARomanos(99)).toEqual("XCIX");
     });
+    it("Debería convertir 100 a 'C'", () => {
+        expect(convertirARomanos(100)).toEqual("C");
+    });
 });
