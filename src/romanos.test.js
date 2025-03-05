@@ -85,4 +85,19 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 100 a 'C'", () => {
         expect(convertirARomanos(100)).toEqual("C");
     });
+    it("Debería convertir algunos números del 101 al 399 a romanos", () => {
+        expect(convertirARomanos(101)).toEqual("CI");
+        expect(convertirARomanos(150)).toEqual("CL");
+        expect(convertirARomanos(175)).toEqual("CLXXV");
+        expect(convertirARomanos(199)).toEqual("CXCIX");
+        expect(convertirARomanos(222)).toEqual("CCXXII");
+        expect(convertirARomanos(250)).toEqual("CCL");
+        expect(convertirARomanos(275)).toEqual("CCLXXV");
+        expect(convertirARomanos(299)).toEqual("CCXCIX");
+        expect(convertirARomanos(321)).toEqual("CCCXXI");
+        expect(convertirARomanos(350)).toEqual("CCCL");
+        expect(convertirARomanos(375)).toEqual("CCCLXXV");
+        expect(convertirARomanos(399)).toEqual("CCCXCIX");
+    });
+    
 });
