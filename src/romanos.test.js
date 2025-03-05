@@ -66,8 +66,13 @@ describe("Conversión de números a romanos", () => {
         expect(convertirARomanos(59)).toEqual("LIX");
         expect(convertirARomanos(62)).toEqual("LXII");
         expect(convertirARomanos(68)).toEqual("LXVIII");
+        expect(convertirARomanos(70)).toEqual("LXX");
         expect(convertirARomanos(74)).toEqual("LXXIV");
         expect(convertirARomanos(79)).toEqual("LXXIX");
+        expect(convertirARomanos(80)).toEqual("LXXX");
         expect(convertirARomanos(85)).toEqual("LXXXV");
+    });
+    it("Debería convertir 90 a 'XC'", () => {
+        expect(convertirARomanos(90)).toEqual("XC");
     });
 });
