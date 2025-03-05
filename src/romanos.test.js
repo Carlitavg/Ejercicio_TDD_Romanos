@@ -57,4 +57,7 @@ describe("Conversión de números a romanos", () => {
         expect(convertirARomanos(47)).toEqual("XLVII");
         expect(convertirARomanos(49)).toEqual("XLIX");
     });
+    it("Debería convertir 50 a 'L'", () => {
+        expect(convertirARomanos(50)).toEqual("L");
+    });
 });
