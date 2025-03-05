@@ -108,4 +108,7 @@ describe("Conversión de números a romanos", () => {
         expect(convertirARomanos(475)).toEqual("CDLXXV");
         expect(convertirARomanos(499)).toEqual("CDXCIX");
     });
+    it("Debería convertir 500 a 'D'", () => {
+        expect(convertirARomanos(500)).toEqual("D");
+    });
 });
