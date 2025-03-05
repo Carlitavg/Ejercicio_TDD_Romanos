@@ -102,4 +102,10 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 400 a 'CD'", () => {
         expect(convertirARomanos(400)).toEqual("CD");
     });
+    it("Debería convertir algunos números del 401 al 499 a romanos", () => {
+        expect(convertirARomanos(401)).toEqual("CDI");
+        expect(convertirARomanos(450)).toEqual("CDL");
+        expect(convertirARomanos(475)).toEqual("CDLXXV");
+        expect(convertirARomanos(499)).toEqual("CDXCIX");
+    });
 });
