@@ -2,8 +2,9 @@ function convertirARomanos(num) {
     if(num <= 0) return "Número no válido"
     let resultado = ""
 
-    if(num == 50){
-        return "L"
+    if(num >= 50){
+        resultado += "L";
+        num -= 50;
     }
     if(num >= 40){
         resultado += "XL";

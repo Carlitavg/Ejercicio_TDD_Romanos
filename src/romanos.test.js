@@ -60,4 +60,14 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 50 a 'L'", () => {
         expect(convertirARomanos(50)).toEqual("L");
     });
+    it("Debería convertir algunos números del 50 al 89 a romanos", () => {
+        expect(convertirARomanos(50)).toEqual("L");
+        expect(convertirARomanos(53)).toEqual("LIII");
+        expect(convertirARomanos(59)).toEqual("LIX");
+        expect(convertirARomanos(62)).toEqual("LXII");
+        expect(convertirARomanos(68)).toEqual("LXVIII");
+        expect(convertirARomanos(74)).toEqual("LXXIV");
+        expect(convertirARomanos(79)).toEqual("LXXIX");
+        expect(convertirARomanos(85)).toEqual("LXXXV");
+    });
 });
