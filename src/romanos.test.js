@@ -75,4 +75,11 @@ describe("Conversión de números a romanos", () => {
     it("Debería convertir 90 a 'XC'", () => {
         expect(convertirARomanos(90)).toEqual("XC");
     });
+    it("Debería convertir algunos números del 91 al 99 a romanos", () => {
+        expect(convertirARomanos(91)).toEqual("XCI");
+        expect(convertirARomanos(94)).toEqual("XCIV");
+        expect(convertirARomanos(95)).toEqual("XCV");
+        expect(convertirARomanos(98)).toEqual("XCVIII");
+        expect(convertirARomanos(99)).toEqual("XCIX");
+    });
 });
